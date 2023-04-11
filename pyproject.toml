@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rehersal_export"
+version = "0.1.0"
+description = ""
+authors = ["Johann Fridriksson <jf@nordsense.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+pydub = "^0.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
