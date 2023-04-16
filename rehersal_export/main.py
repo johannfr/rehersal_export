@@ -4,6 +4,7 @@ from glob import glob
 from pathlib import Path
 import re
 import sys
+from natsort import natsorted
 
 NB_HAVE = "~/Nextcloud/Naboens Have/Øvelokale/date/session"
 
@@ -25,7 +26,7 @@ def main(input_dir, output_dir):
 
     audiofiles_path = input_dir / f"interchange/{input_dir.name}/audiofiles"
 
-    all_files = sorted(glob(str(audiofiles_path / "*.wav")))
+    all_files = natsorted(glob(str(audiofiles_path / "*.wav")))
 
     le_match = re.search(r"Take(\d+)_Audio (\d+)-", all_files[-1])
     takes = int(le_match.group(1))

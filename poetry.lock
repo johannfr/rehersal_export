@@ -50,6 +50,18 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "natsort"
+version = "8.3.1"
+description = "Simple yet flexible natural sorting in Python."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+fast = ["fastnumbers (>=2.0.0)"]
+icu = ["PyICU (>=1.0.0)"]
+
+[[package]]
 name = "packaging"
 version = "23.0"
 description = "Core utilities for Python packages"
@@ -117,7 +129,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "6c5bb0cd71e9c97a8c791c934108b164f8e701ff182d04c51ef2c7f684ac5b3a"
+content-hash = "3899d2e79e0421b501713ae0c17cfdc4e993a2214b3564d8c302e2d5c32844fb"
 
 [metadata.files]
 atomicwrites = []
@@ -128,6 +140,7 @@ click = [
 ]
 colorama = []
 more-itertools = []
+natsort = []
 packaging = []
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
